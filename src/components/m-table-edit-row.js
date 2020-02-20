@@ -76,6 +76,7 @@ export default class MTableEditRow extends React.Component {
                 key={columnDef.tableData.id}
                 columnDef={cellProps}
                 dateTimePickerLocalization={this.props.localization.dateTimePickerLocalization}
+                muiDatePickerProps={{...MTableEditRow.defaultProps.localization.muiDatePickerProps, ...this.props.localization.muiDatePickerProps}}
                 value={value}
                 rowData={this.state.data}
                 onChange={value => {
@@ -226,6 +227,11 @@ MTableEditRow.defaultProps = {
     saveTooltip: 'Save',
     cancelTooltip: 'Cancel',
     deleteText: 'Are you sure delete this row?',
+    muiDatePickerProps: {
+      okLabel: 'OK',
+      cancelLabel: 'Cancel',
+      clearLabel: 'Clear'
+    }
   }
 };
 
