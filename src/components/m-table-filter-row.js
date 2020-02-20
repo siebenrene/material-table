@@ -109,6 +109,8 @@ class MTableFilterRow extends React.Component {
           value={columnDef.tableData.filterValue || null}
           onChange={onDateInputChange}
           clearable
+          {...MTableFilterRow.defaultProps.localization.muiDatePickerProps}
+          {...this.props.localization.muiDatePickerProps}
         />
       );
     } else if (columnDef.type === 'datetime') {
@@ -117,6 +119,8 @@ class MTableFilterRow extends React.Component {
           value={columnDef.tableData.filterValue || null}
           onChange={onDateInputChange}
           clearable
+          {...MTableFilterRow.defaultProps.localization.muiDatePickerProps}
+          {...this.props.localization.muiDatePickerProps}
         />
       );
     } else if (columnDef.type === 'time') {
@@ -125,6 +129,8 @@ class MTableFilterRow extends React.Component {
           value={columnDef.tableData.filterValue || null}
           onChange={onDateInputChange}
           clearable
+          {...MTableFilterRow.defaultProps.localization.muiDatePickerProps}
+          {...this.props.localization.muiDatePickerProps}
         />
       );
     }
@@ -215,7 +221,12 @@ MTableFilterRow.defaultProps = {
   selection: false,
   hasActions: false,
   localization: {
-    filterTooltip: 'Filter'
+    filterTooltip: 'Filter',
+    muiDatePickerProps: {
+      okLabel: 'OK',
+      cancelLabel: 'Cancel',
+      clearLabel: 'Clear',
+    }
   },
   hideFilterIcons: false,
 };
