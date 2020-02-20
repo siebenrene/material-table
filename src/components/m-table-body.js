@@ -117,7 +117,7 @@ class MTableBody extends React.Component {
         options={this.props.options}
         isTreeData={this.props.isTreeData}
         hasAnyEditingRow={this.props.hasAnyEditingRow}
-        localization={{ ...MTableBody.defaultProps.localization.editRow, ...this.props.localization.editRow, muiDatePickerProps: this.props.localization.muiDatePickerProps }}
+        localization={{ ...MTableBody.defaultProps.localization.editRow, ...this.props.localization.editRow, dateTimePickerLocalization: this.props.localization.dateTimePickerLocalization, muiDatePickerProps: this.props.localization.muiDatePickerProps }}
       />
     ));
   }
@@ -159,7 +159,7 @@ class MTableBody extends React.Component {
             icons={this.props.icons}
             key="key-add-row"
             mode="add"
-            localization={{ ...MTableBody.defaultProps.localization.editRow, ...this.props.localization.editRow, muiDatePickerProps: this.props.localization.muiDatePickerProps }}
+            localization={{ ...MTableBody.defaultProps.localization.editRow, ...this.props.localization.editRow, dateTimePickerLocalization: this.props.localization.dateTimePickerLocalization, muiDatePickerProps: this.props.localization.muiDatePickerProps }}
             options={this.props.options}
             isTreeData={this.props.isTreeData}
             detailPanel={this.props.detailPanel}
@@ -182,7 +182,7 @@ class MTableBody extends React.Component {
             icons={this.props.icons}
             key="key-add-row"
             mode="add"
-            localization={{ ...MTableBody.defaultProps.localization.editRow, ...this.props.localization.editRow, muiDatePickerProps: this.props.localization.muiDatePickerProps }}
+            localization={{ ...MTableBody.defaultProps.localization.editRow, ...this.props.localization.editRow, dateTimePickerLocalization: this.props.localization.dateTimePickerLocalization, muiDatePickerProps: this.props.localization.muiDatePickerProps }}
             options={this.props.options}
             isTreeData={this.props.isTreeData}
             detailPanel={this.props.detailPanel}
