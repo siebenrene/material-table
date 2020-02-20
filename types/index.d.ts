@@ -225,6 +225,7 @@ export interface Options {
 
 export interface Localization {
   body?: {
+    dateTimePickerLocalization?: object;
     emptyDataSourceMessage?: string;
     filterRow?: {
       filterTooltip?: string;
